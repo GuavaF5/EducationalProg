@@ -97,7 +97,7 @@ if st.button("Ответить"):
                 st.session_state.health = 0
                 st.session_state.game_over = True
                 st.success("Вы победили! 🎉")
-             else:
+            else:
                 st.success("Правильный ответ! Здоровье уменьшено на 10.")
                 st.session_state.current_question += 1
                 if st.session_state.current_question >= len(st.session_state.questions):
