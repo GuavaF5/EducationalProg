@@ -19,9 +19,6 @@ def get_access_token() -> str:
   access_token = response.json()["access_token"]
   return access_token
 
-with GigaChat(credentials=..., verify_ssl_certs=False) as giga:
-    response = giga.chat("Какие факторы влияют на стоимость страховки на дом?")
-    print(response.choices[0].message.content)
 
 def generate_test():
     access_token = get_access_token()
