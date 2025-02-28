@@ -34,8 +34,8 @@ def generate_test():
             'Accept': 'application/json',
             'Authorization': f'Bearer {access_token}'
         }
-        "temperature": 0.7,
-        "max_tokens": 500 
+        temperature: 0.7,
+        max_tokens: 500 
         prompt =  f"""
                     Сгенерируй 10 тестовых вопросов по теме 'Программирование на Python'.
                     Для каждого вопроса предоставь три варианта ответа, один из которых должен быть правильным.
