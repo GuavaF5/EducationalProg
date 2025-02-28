@@ -103,7 +103,7 @@ if st.button("Ответить"):
                 if st.session_state.current_question >= len(st.session_state.questions):
                     st.session_state.game_over = True
                     st.success("Вы ответили на все вопросы! Вы победили! 🎉")
-         else:
+        else:
             st.session_state.game_over = True
             st.error("Вы проиграли! 😢")
       else:
