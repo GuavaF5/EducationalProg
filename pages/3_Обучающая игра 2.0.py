@@ -25,9 +25,9 @@ with GigaChat(credentials=..., verify_ssl_certs=False) as giga:
 
 def generate_test():
     access_token = get_access_token()
-        if not access_token:
-            st.error("Не удалось получить токен доступа. Проверьте учетные данные.")
-            return None
+    if not access_token:
+        st.error("Не удалось получить токен доступа. Проверьте учетные данные.")
+        return None
     with GigaChat(verify_ssl_certs=False) as giga:
         headers = {
             'Content-Type': 'application/json',
