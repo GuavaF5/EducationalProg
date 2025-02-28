@@ -1,4 +1,6 @@
 import streamlit as st
+import requests
+import json
 
 def get_access_token() -> str:
   url = "https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
