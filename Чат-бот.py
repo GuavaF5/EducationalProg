@@ -40,9 +40,6 @@ def send_prompt(msg: str, access_token: str):
 
 
 st.set_page_config(page_title = "Сайт с обучающей программой") 
-
-st.write("**Главная страница: https://educationalprog.streamlit.app/Главная_страница**")
-
 st.title("Чат-бот")
 st.sidebar.success("Меню") 
 
